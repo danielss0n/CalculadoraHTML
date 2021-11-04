@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="parent-box">
+    <div id="child-box-inputs">
+        <input type="text" id="num1">
+        <input type="text" id="num2"> =
+        <input type="text" id="resultado">
+    </div>
+
+    <div id="child-box-buttons">
+        <button id="btnsoma" onclick="somar(Number(num1.value),Number(num2.value))">+</button>
+        <button id="btnsubtrair" onclick="subtrair(Number(num1.value),Number(num2.value))">-</button>
+        <button id="btnmultiplicar" onclick="multiplicar(Number(num1.value),Number(num2.value))">x</button>
+        <button id="btndivir" onclick="dividir(Number(num1.value),Number(num2.value))">÷</button>
+        <button id="btnpotenciar" onclick="potenciar(Number(num1.value),Number(num2.value))">^</button> <br>
+        <button id="btnsubstituir" onclick="substituir()"><</button>
+        <button id="btnzerar" onclick="zerar()">zerar</button>
+        <h1 id="name">Danielsson Calculator</h1>
+    </div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
+
+
+
